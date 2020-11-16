@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'test_task.wsgi.application'
 # Channels
-ASGI_APPLICATION = 'test_task.asgi.application'
+ASGI_APPLICATION = 'test_task.routing.application'
 
 CHANNEL_LAYERS = {
     'default': {
