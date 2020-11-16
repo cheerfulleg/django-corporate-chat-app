@@ -78,10 +78,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            # local
-            # "hosts": [('127.0.0.1', 6379)],
-            # heroku
-            "hosts": [os.getenv('REDISTOGO_URL', 'redis://localhost:6379')],
+            "hosts": ['redis://:p9ba1d5e51832826201bd1ed2e60aefeb48fb5d7bc5b77a67747526c326944af4@ec2-50-16-117-185.compute-1.amazonaws.com:21629', ('127.0.0.1', 6379)],
         },
     },
 }
