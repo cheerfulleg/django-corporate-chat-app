@@ -81,7 +81,7 @@ CHANNEL_LAYERS = {
             # local
             # "hosts": [('127.0.0.1', 6379)],
             # heroku
-            "hosts": [os.environ.get('REDIS_URL')],
+            "hosts": [os.getenv('REDISTOGO_URL', 'redis://localhost:6379')],
         },
     },
 }
